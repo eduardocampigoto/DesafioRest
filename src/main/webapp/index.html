@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Desafio Rest</title>
+      <link rel='stylesheet' href='libs/bootstrap-3.3.7-dist/css/bootstrap.css'>
+   </head>
+   <body>
+   <div id="alerta" class='col-sm-12 col-md-12' style="display:none"> </div>
+      <div class='container'>
+         <div class='col-sm-12 col-md-12'>
+            <div class='row text-center'>
+               <h1>Desafio Rest</h1>
+            </div>
+            <form>
+               <div class='row'>
+                  <div class='col-sm-12 col-md-12'>
+                     <div style="display:none" class="form-group pull-left">
+                        <label for="id">id:</label>
+                        <input type="number" min="0"  class="form-control" id="id">
+                     </div>
+                  </div>
+               </div>
+               <div class='row'>
+                  <div class='col-sm-6 col-md-6'>
+                     <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome">
+                     </div>
+                  </div>
+                  <div class='col-sm-6 col-md-6'>
+                     <div class="form-group">
+                        <label for="cnpj">CNPJ:</label>
+                        <input type="text" class="form-control" id="cnpj">
+                     </div>
+                  </div>
+               </div>
+               <div class='row'>
+                  <div class='col-sm-6 col-md-6'>
+                     <div class="form-group">
+                        <label for="comentario">Comentario:</label>
+                        <input type="text" class="form-control" id="comentario">
+                     </div>
+                  </div>
+                  <div class='col-sm-6 col-md-6'>
+                     <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" title="Insira o email" id="email">
+                     </div>
+                  </div>
+               </div>
+               
+
+<div class='col-sm-12 col-md-12'>
+     <div class='row' id='btRow'>
+     <div class='col-sm-8 col-md-8'></div>
+     <div class='col-sm-2 col-md-2'>
+     <button type='button' class='btn btForm btn-warning' id='btEditar' onclick='javascript: editarCliente()' style='display:none;'>Salvar</button>
+     </div>   
+   	 <div class='col-sm-2 col-md-2'>   	
+   	 <button type='button' class='btn btForm btn-default' id='btCancelar' onclick='javascript: carregarPagina("index.html")' style='display:none;'>Cancelar</button>
+     <a class="btn btn-default pull-right" id='btAdicionar' onClick="javascript: adicionarCliente() ">Adicionar</a>
+    </div></div></div>
+
+
+
+            </form>
+         </div>
+      </div>
+      <div class='col-sm-12 col-md-12'>
+      <div class="row">
+      
+       <div class='col-sm-4 col-md-4'>
+           <div class="form-group">
+             <label for="busca">buscar:</label>
+                <input type="text" class="form-control" id="busca">
+           </div>       	
+         	<button class="btn btn-default" id='btBuscar'>Buscar</button>
+         </div>
+       	<div class='col-sm-8 col-md-8'></div>
+      
+      </div>
+      </div>
+      <div class='col-sm-12 col-md-12'>
+         <h2>Clientes cadastrados</h2>
+         <p></p>
+         <table class="table table-hover">
+            <thead>
+               <tr>
+                  <th>Id</th>
+                  <th>Nome</th>
+                  <th>CNPJ</th>
+                  <th>email</th>
+                  <th>comentarios</th>
+               </tr>
+            </thead>
+            <tbody id='listaClientes'>
+            </tbody>
+         </table>
+      </div>
+           
+      <script type='text/javascript' src='libs/jquery-3.1.1.min.js'></script>
+      <script type='text/javascript' src='libs/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
+      <script type='text/javascript' src='libs/jquery.mask.min.js'></script>
+      <script type='text/javascript' src='scripts/default.js'></script>
+   </body>
+</html>

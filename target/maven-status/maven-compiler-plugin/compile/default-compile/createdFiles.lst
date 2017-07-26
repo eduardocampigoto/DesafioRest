@@ -1,0 +1,6 @@
+br/com/neomind/exception/GlobalException.class
+br/com/neomind/servico/ClienteServico.class
+br/com/neomind/rest/ClienteRest.class
+br/com/neomind/persistencia/ClientePersist.class
+br/com/neomind/objetos/Cliente.class
+br/com/neomind/rest/UtilRest.class
